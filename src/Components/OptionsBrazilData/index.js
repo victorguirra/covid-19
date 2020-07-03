@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
-import {Title} from './styles';
+import {Container} from './styles';
 
 export default function OptionsBrazilData(){
+     
     return(
-        <Title>Hello World</Title>
+
+        <Container>
+
+            
+
+        </Container>
+        
     )
 }
