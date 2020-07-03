@@ -15,7 +15,7 @@ export default function App(){
 
         <NavigationContainer>
 
-            <Stack.Navigator headerMode="none" initialRouteName="Main">
+            <Stack.Navigator headerMode="none" initialRouteName="Home">
 
                 <Stack.Screen name="Main" component={MainScreen} />
                 <Stack.Screen name="Home" component={HomeScreen} />
