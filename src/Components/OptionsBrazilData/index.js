@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import axios from 'axios';
 
-import {Container, Button, Title, Option} from './styles';
+
+
+import {Container, Wrapper, Option, TitleState,} from './styles';
 
 export default function OptionsBrazilData(){
-    const [apiData, setApiData] = useState([]);
+    const [apiData, setApiData] = useState({data: []});
     
     useEffect(() => {
         const fetchData = async () => {
@@ -21,11 +22,19 @@ export default function OptionsBrazilData(){
 
         <Container>
 
-            <Button onPress={() => console.log(apiData)}>
+            {[apiData].map(item => (
+                <Wrapper key={Math.random()}>
 
-                <Title>Show Data</Title>
+                    {item.data.map(internItem => (
+                        <Option key={internItem.uid}>
 
-            </Button>
+                            <TitleState>{internItem.state}</TitleState>
+
+                        </Option>
+                    ))}
+
+                </Wrapper>
+            ))}
            
         </Container>
         
