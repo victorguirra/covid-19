@@ -1,9 +1,38 @@
 import React from 'react';
 import {Text} from 'react-native';
 
+import Virus from '../../images/virus.png';
 
-export default function Main(){
+import {Wrapper,
+        Container,
+        Title,
+        ImgVirus,
+        SubTitle,
+        ButtonInit,
+        TitleButtonInit,
+} from './styles';
+
+export default function Main({navigation}){
     return(
-        <Text>Aqui vai a Main</Text>
+
+        <Wrapper>
+
+            <Container>
+
+                <Title>Covid-19</Title>
+
+                <ImgVirus source={Virus} alt="Corona Vírus" />
+
+                <SubTitle>Estatísticas sobre o Corona Vírus</SubTitle>
+
+            </Container>
+
+            <ButtonInit onPress={() => navigation.navigate('Home')}>
+
+                <TitleButtonInit>Iniciar</TitleButtonInit>
+
+            </ButtonInit>
+
+        </Wrapper>
     )
 }
