@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-
+import {AntDesign} from '@expo/vector-icons';
 
 import {Container, Wrapper, Option, TitleState,} from './styles';
 
@@ -29,6 +29,8 @@ export default function OptionsBrazilData(){
                         <Option key={internItem.uid}>
 
                             <TitleState>{internItem.state}</TitleState>
+
+                            <AntDesign name="arrowright" size={30} color="#03142B" />
 
                         </Option>
                     ))}

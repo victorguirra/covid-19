@@ -14,10 +14,16 @@ export const Option = styled.TouchableOpacity`
     width:100%;
     height:50px;
     margin-top:20px;
-    margin-bottom:10px;
-    justify-content:center;
+    margin-bottom:10px
+    border-radius:10px;
+    flex-direction:row;
+    align-items:center;
+    padding:0 15px;
+    justify-content:space-between;
 `;
 
 export const TitleState = styled.Text`
-    color:#fff;
+    color:#03142B;
+    font-weight:bold;
+    font-size:16px;
 `;
