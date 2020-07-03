@@ -2,10 +2,11 @@ import React, {useState, useEffect} from 'react';
 
 import {AntDesign} from '@expo/vector-icons';
 
-import {Container, Wrapper, Option, TitleState,} from './styles';
+import {Container, Wrapper, Option, VisibleInfo, TitleState, InvisibleInfo, View} from './styles';
 
 export default function OptionsBrazilData(){
     const [apiData, setApiData] = useState({data: []});
+    const [moreInfo, setMoreInfo] = useState(false);
     
     useEffect(() => {
         const fetchData = async () => {
@@ -22,15 +23,19 @@ export default function OptionsBrazilData(){
 
         <Container>
 
-            {[apiData].map(item => (
+            {[apiData].map(externItem => (
                 <Wrapper key={Math.random()}>
 
-                    {item.data.map(internItem => (
-                        <Option key={internItem.uid}>
+                    {externItem.data.map(item => (
+                        <Option key={item.uid}>
 
-                            <TitleState>{internItem.state}</TitleState>
+                            <VisibleInfo>
 
-                            <AntDesign name="arrowright" size={30} color="#03142B" />
+                                <TitleState>{item.state}</TitleState>
+
+                                <AntDesign name="arrowright" size={30} color="#03142B" />
+
+                            </VisibleInfo>
 
                         </Option>
                     ))}

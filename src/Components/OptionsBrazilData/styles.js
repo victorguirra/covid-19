@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Container = styled.ScrollView`
     width:90%;
-    padding:10px 0;
+    margin-top:20px;
 `;
 
 export const Wrapper = styled.View`
@@ -16,11 +16,15 @@ export const Option = styled.TouchableOpacity`
     margin-top:20px;
     margin-bottom:10px
     border-radius:10px;
-    flex-direction:row;
-    align-items:center;
+    justify-content:center;
     padding:0 15px;
-    justify-content:space-between;
 `;
+
+export const VisibleInfo = styled.View`
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+`
 
 export const TitleState = styled.Text`
     color:#03142B;
