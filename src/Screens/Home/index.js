@@ -18,13 +18,13 @@ import {Wrapper,
         ImagePass,
 } from './styles';
 
-export default function Home(){
+export default function Home({navigation}){
     return(
         <Wrapper>
 
             <ContainerOptions>
 
-                <BrazilData>
+                <BrazilData onPress={() => navigation.navigate('BrazilData')}>
                 
                     <ImageIcon source={brazilMap} alt="Mapa do Brasil" />
 
@@ -37,7 +37,7 @@ export default function Home(){
 
                 </BrazilData>
 
-                <CountriesData>
+                <CountriesData onPress={() => navigation.navigate('CountriesData')}>
 
                     <ImageIcon source={Countries} alt="Países" />
 
@@ -45,7 +45,7 @@ export default function Home(){
 
                 </CountriesData>
 
-                <PreventionInfos>
+                <PreventionInfos onPress={() => navigation.navigate('PreventionInfos')}>
 
                     <ImageIcon source={Prevention} alt="Prevenção" />
 
