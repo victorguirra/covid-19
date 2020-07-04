@@ -71,5 +71,48 @@ Mas caso o usuário escolha a opção "Como se Prevenir", ele será redirecionad
     <img src="https://ik.imagekit.io/ur6xo9m70i/APP_7_-NJA2Mv8VZ.jpeg" width="300">
 </h1>
 
+## 📂 Acessando o Projeto
 
+Para ter acesso ao projeto, exectue os seguintes comandos em seu terminal:
 
+<h3>
+Clonando o repositório:
+</h3>
+
+```bash
+    $ git clone https://github.com/victorguirra/covid-19.git
+```
+
+<h3>
+Entrando no Projeto:
+</h3>
+
+```bash
+    $ cd covid-19
+```
+
+<h3>
+Iniciando o Projeto:
+</h3>
+
+```bash
+    $ expo start
+```
+
+<h3>
+Abrindo o projeto no celular:
+</h3>
+
+```bash
+    Faça o Download do aplicativo "Expo" em seu celular;
+    Após isso, utilizando o app "Expo" escaneie o QR Code;
+```
+
+<h3>
+Caso queira ter acesso ao código:
+</h3>
+
+```bash
+    $ cd covid-19
+    $ code . "Caso você use o VS Code"
+```
