@@ -116,3 +116,9 @@ Caso queira ter acesso ao código:
     $ cd covid-19
     $ code . "Caso você use o VS Code"
 ```
+
+---
+
+<h3 align="center">
+    💻 Desenvolvido por: Victor Guirra
+</h3>
