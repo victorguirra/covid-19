@@ -9,3 +9,10 @@
 - [Tecnologias Utilizadas](#-Tecnologias-Utilizadas)
 - [Exibição do Projeto](#-Exibição-do-Projeto)
 - [Acessando o Projeto](#-Acessando-o-Projeto)
+
+
+## 📔 Sobre
+
+Neste projeto foi criado um aplicativo que mostra ao usuário, dados e estatísticas sobre o corona vírus.
+
+O aplicativo consome uma API externa, portanto os dados estão sendo diariamente atualizados de acordo com o API.
