@@ -6,13 +6,29 @@
 # Índice
 
 - [Sobre](#-Sobre)
-- [Tecnologias Utilizadas](#-Tecnologias-Utilizadas)
+- [Tecnologias e Componentes Utilizados](#-Tecnologias-e-Componentes-Utilizados)
 - [Exibição do Projeto](#-Exibição-do-Projeto)
 - [Acessando o Projeto](#-Acessando-o-Projeto)
 
+---
 
 ## 📔 Sobre
 
 Neste projeto foi criado um aplicativo que mostra ao usuário, dados e estatísticas sobre o corona vírus.
 
 O aplicativo consome uma API externa, portanto os dados estão sendo diariamente atualizados de acordo com o API.
+
+---
+
+## 🚀 Tecnologias e Componentes Utilizados
+
+- React Native
+- Stack Navigation
+- React Hooks (useState, useEffect)
+- Consumo de API externa
+- Styled Components
+- Vector Icons
+
+---
+
+## 📱 Exibição do Projeto
