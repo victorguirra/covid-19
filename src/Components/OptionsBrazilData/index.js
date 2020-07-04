@@ -4,7 +4,15 @@ import {AntDesign} from '@expo/vector-icons';
 
 import {Modal} from 'react-native';
 
-import {Container, Wrapper, Option, VisibleInfo, TitleState, } from './styles';
+import {Container,
+        Wrapper,
+        Option,
+        VisibleInfo,
+        TitleState,
+        WrapperModal,
+        ButtonCloseModal,
+        TitleModal,
+} from './styles';
 
 export default function OptionsBrazilData(){
     const [apiData, setApiData] = useState({data: []});
@@ -25,6 +33,10 @@ export default function OptionsBrazilData(){
     function handleShowMoreInfo(item){
         setSelectedOption(item);
         setModalVisible(true);
+    }
+
+    function handleCloseModal(){
+        setModalVisible(!modalVisible);
     }
 
     return(
@@ -54,8 +66,16 @@ export default function OptionsBrazilData(){
                                 visible={modalVisible}
                                 transparent={false}
                                 >
+                                
+                                <WrapperModal>
 
-                                <TitleState>{item.uf}</TitleState> 
+                                    <ButtonCloseModal onPress={() => handleCloseModal()}>
+                                        <AntDesign name="closecircle" size={30} color="#15ed97" />
+                                    </ButtonCloseModal>
+                                    
+                                    <TitleModal>{item.state} - {item.uf}</TitleModal>
+
+                                </WrapperModal> 
 
                                 </Modal>
                                                             

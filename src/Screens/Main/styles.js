@@ -37,7 +37,7 @@ export const SubTitle = styled.Text`
 `
 
 export const ButtonInit = styled.TouchableOpacity`
-    background-color:#17B978;
+    background-color:#15ed97;
     height:45px;
     width:90%;
     border-radius:10px;

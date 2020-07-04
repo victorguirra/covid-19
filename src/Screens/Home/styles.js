@@ -11,7 +11,7 @@ export const ContainerOptions = styled.View`
 `;
 
 export const BrazilData = styled.TouchableOpacity`
-    background-color:#17B978;
+    background-color:#15ed97;
     width:90%;
     padding:10px;
     border-radius:10px;
@@ -35,7 +35,7 @@ export const TitleOption = styled.Text`
 `;
 
 export const CountriesData = styled.TouchableOpacity`
-    background-color:#17B978;
+    background-color:#15ed97;
     width:90%;
     padding:10px;
     border-radius:10px;
@@ -44,7 +44,7 @@ export const CountriesData = styled.TouchableOpacity`
 `;
 
 export const PreventionInfos = styled.TouchableOpacity`
-    background-color:#17B978;
+    background-color:#15ed97;
     width:90%;
     padding:10px;
     border-radius:10px;

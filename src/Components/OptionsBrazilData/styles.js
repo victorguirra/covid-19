@@ -10,7 +10,7 @@ export const Wrapper = styled.View`
 `;
 
 export const Option = styled.TouchableOpacity`
-    background-color:#17B978;
+    background-color:#15ed97;
     width:100%;
     height:50px;
     margin-top:20px;
@@ -32,3 +32,20 @@ export const TitleState = styled.Text`
     font-size:16px;
 `;
 
+export const WrapperModal = styled.View`
+    flex:1;
+    background-color:#03142B;
+`;
+
+export const ButtonCloseModal = styled.TouchableOpacity`
+    width:50px;
+    padding:10px;
+    align-items:center;
+`;
+
+export const TitleModal = styled.Text`
+    color:#15ed97;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+`;
