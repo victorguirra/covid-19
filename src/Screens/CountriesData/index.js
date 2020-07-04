@@ -1,9 +1,29 @@
 import React from 'react';
 
-import {Title} from './styles';
+import {AntDesign} from '@expo/vector-icons';
 
-export default function CountriesData(){
+import {Wrapper, ButtonIcon, Container, Title} from './styles';
+
+import OptionsCountriesData from '../../Components/OptionsCountriesData';
+
+export default function BrazilData({navigation}){
     return(
-        <Title>Dados dos Países do Mundo</Title>
+        <Wrapper>
+
+            <ButtonIcon onPress={() => navigation.navigate('Home')}>
+
+                <AntDesign name="doubleleft" size={30} color="#fff" />
+
+            </ButtonIcon>
+
+            <Container>
+
+                <Title>Dados por Países</Title>
+
+                <OptionsCountriesData />
+
+            </Container>
+
+        </Wrapper>
     )
 }
