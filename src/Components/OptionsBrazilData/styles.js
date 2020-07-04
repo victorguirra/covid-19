@@ -31,3 +31,4 @@ export const TitleState = styled.Text`
     font-weight:bold;
     font-size:16px;
 `;
+
