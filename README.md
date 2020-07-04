@@ -32,3 +32,44 @@ O aplicativo consome uma API externa, portanto os dados estão sendo diariamente
 ---
 
 ## 📱 Exibição do Projeto
+
+Ao ser aberto, o aplicativo mostrará a seguinte tela ao usuário:
+
+<h1 align="center">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/APP_1_xBYuxyF_kc.jpeg" width="300">
+</h1>
+
+Ao pressionar o botão, o usuário será direcionado para a tela principal do aplicativo;
+
+Nesta tela lhe seráo mostrado três opções, são elas: Dados dos Estados do Brazil, Dados de Países e como se prevenir; 
+
+<h1 align="center">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/APP_2_HHcYUrQl0.jpeg" width="300">
+</h1>
+
+Ao escolher a opção "Dados por Estado Brasileiro" o usuário será direcionado para uma outra tela, onde lhe serão listado todos os estados do Brasil;
+
+E ao pressionar em uma dessas opções, lhe será mostrado um modal com os dados do estado escolhido:
+
+<h1 align="center">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/APP_3_hibKPa58jh.jpeg" width="300">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/APP_4__XxNzXIYhng.jpeg" width="300">
+</h1>
+
+Da mesma forma que acontece com os dados dos estados brasileiros, ao escolher a opção com os dados por países ao redor do mundo, será mostrado ao usuário uma lista com vários países;
+
+E ao pressionar em uma dessas opções, lhe será mostrado um modal com os dados do país escolhido:
+
+<h1 align="center">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/APP_6_mqT0WKwlVa.jpeg" width="300">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/APP_5__NIx2eWCb.jpeg" width="300">
+</h1>
+
+Mas caso o usuário escolha a opção "Como se Prevenir", ele será redirecionado para uma outra tela, e nesta tela lhe será mostrado algumas dicas de prevenção em um scroll horizontal:
+
+<h1 align="center">
+    <img src="https://ik.imagekit.io/ur6xo9m70i/APP_7_-NJA2Mv8VZ.jpeg" width="300">
+</h1>
+
+
+
