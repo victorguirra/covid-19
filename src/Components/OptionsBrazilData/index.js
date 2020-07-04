@@ -2,12 +2,14 @@ import React, {useState, useEffect} from 'react';
 
 import {AntDesign} from '@expo/vector-icons';
 
+import {Modal} from 'react-native';
+
 import {Container, Wrapper, Option, VisibleInfo, TitleState, } from './styles';
 
 export default function OptionsBrazilData(){
     const [apiData, setApiData] = useState({data: []});
-    const [showMoreInfo, setShowMoreInfo] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null);
+    const [modalVisible, setModalVisible] = useState(false);
     
     useEffect(() => {
         const fetchData = async () => {
@@ -19,6 +21,11 @@ export default function OptionsBrazilData(){
         }
         fetchData();
     },[])
+
+    function handleShowMoreInfo(item){
+        setSelectedOption(item);
+        setModalVisible(true);
+    }
 
     return(
 
@@ -39,6 +46,20 @@ export default function OptionsBrazilData(){
                                 <AntDesign name="arrowright" size={30} color="#03142B" />
 
                             </VisibleInfo>
+
+                            {item.uid === selectedOption?.uid ? 
+
+                                <Modal
+                                animationType="slide"
+                                visible={modalVisible}
+                                transparent={false}
+                                >
+
+                                <TitleState>{item.uf}</TitleState> 
+
+                                </Modal>
+                                                            
+                            : null}
 
                         </Option>
                     ))}
