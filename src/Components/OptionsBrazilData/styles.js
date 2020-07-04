@@ -49,3 +49,31 @@ export const TitleModal = styled.Text`
     font-size:20px;
     font-weight:bold;
 `;
+
+export const WrapperScroll = styled.ScrollView``;
+
+export const ContainerModal = styled.View`
+    align-items:center;
+`;
+
+export const WrapperInfos = styled.View`
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-around;
+    width:85%;
+    margin-top:40px;
+    border:2px solid #15ed97;
+    padding:15px;
+    border-radius:10px;
+`;
+
+export const ImageInfos = styled.Image`
+    width:90px;
+    height:90px;
+`;
+
+export const TitleInfos = styled.Text`
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+`;

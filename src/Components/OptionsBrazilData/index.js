@@ -4,14 +4,24 @@ import {AntDesign} from '@expo/vector-icons';
 
 import {Modal} from 'react-native';
 
+import virus from '../../images/virus.png';
+import deaths from '../../images/deaths.png';
+import suspects from '../../images/suspects.png';
+import refuse from '../../images/refuse.png';
+
 import {Container,
         Wrapper,
         Option,
         VisibleInfo,
         TitleState,
         WrapperModal,
+        WrapperScroll,
         ButtonCloseModal,
         TitleModal,
+        ContainerModal,
+        WrapperInfos,
+        ImageInfos,
+        TitleInfos
 } from './styles';
 
 export default function OptionsBrazilData(){
@@ -69,11 +79,51 @@ export default function OptionsBrazilData(){
                                 
                                 <WrapperModal>
 
+                                    <WrapperScroll>
+
                                     <ButtonCloseModal onPress={() => handleCloseModal()}>
                                         <AntDesign name="closecircle" size={30} color="#15ed97" />
                                     </ButtonCloseModal>
                                     
                                     <TitleModal>{item.state} - {item.uf}</TitleModal>
+
+                                        <ContainerModal>
+
+                                            <WrapperInfos>
+
+                                                <ImageInfos source={virus} alt="Ícone Vírus" />
+
+                                                <TitleInfos>{item.cases} Casos</TitleInfos>
+
+                                            </WrapperInfos>
+
+                                            <WrapperInfos>
+
+                                                <TitleInfos>{item.deaths} Mortes</TitleInfos>
+
+                                                <ImageInfos source={deaths} alt="Mortos" />
+
+                                            </WrapperInfos>
+
+                                            <WrapperInfos>
+
+                                                <ImageInfos source={suspects} alt="Suspeitos" />
+
+                                                <TitleInfos>{item.suspects} Suspeitos</TitleInfos>
+
+                                            </WrapperInfos>
+
+                                            <WrapperInfos>
+
+                                                <TitleInfos>{item.refuses} Recusas</TitleInfos>
+
+                                                <ImageInfos source={refuse} alt="Mortos" />
+
+                                            </WrapperInfos>
+
+                                        </ContainerModal>
+
+                                    </WrapperScroll>
 
                                 </WrapperModal> 
 
